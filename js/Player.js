@@ -12,7 +12,7 @@ class Player {
          * @return  {array}     tokens - an arary of new token objects
          */
 
-        createTokens(num) {
+        createTokens(num => {
             const tokens = [];
 
             for (let index = 0; index < num; i++) {
@@ -21,6 +21,6 @@ class Player {
 
                 return tokens;
             }
-        }
+        });
     }
 }
